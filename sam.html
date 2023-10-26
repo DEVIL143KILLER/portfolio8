@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Name - Resume</title>
+    <style>
+        pre{font-size: 20px;}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+        }
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .contact {
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-weight: bold;
+        }
+        .subsection {
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td style="padding: 10px;">
+        
+              <img src="file:///D:/Pictures/Animals/2%20Bobs.jpg" width=300px height=300px border=10px >
+            
+            </td>
+            <td>
+        
+            <b><pre>     P.PARAMAGURU
+     This is my photofolio it gives you some
+information about me.It is looks like a 'RESUME'
+It helps you to calculate some charachteristics
+about me.
+            </pre></b>
+            
+            </td>
+        </tr>
+    </table><br>
+    <div class="header">
+        <div class="name" id="name">P.PARAMAGURU</div>
+        <div class="contact" id="contact">
+            Email: paramagurup@gmail.com<br>
+            Phone: 6369725152
+        </div>
+    </div>
+
+    <div class="section" id="educationSection">
+        <div class="section-title">Education</div>
+        <div class="subsection" id="education">
+            
+        </div>
+    </div>
+
+    <div class="section" id="experienceSection">
+        <div class="section-title">Experience</div>
+        <div class="subsection" id="experience">
+            
+        </div>
+    </div>
+
+    <div class="section" id="skillsSection">
+        <div class="section-title">Skills</div>
+        <div class="subsection" id="skills">
+            
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('name').innerHTML = 'P.PARAMAGURU';
+        document.getElementById('contact').innerHTML = 'Email: paramagurup512@gmail.com<br>Phone: 6369725152';
+
+        // Populate education section
+        const educationSection = document.getElementById('education');
+        const educationData = {
+            university: 'Thanthai Periyar Government Arts & Science College',
+            degree: 'BSc Computer Science',
+            graduationYear: '2019-2023',
+            major:'SSLC EXAMINATION (2018-19)'
+            
+        };
+        educationSection.innerHTML = `
+            <div><strong>${educationData.university}, ${educationData.degree}, ${educationData.graduationYear}</strong></div>
+            <div>Major: ${educationData.major}</div>
+            <div>GPA: ${educationData.gpa}</div>
+        `;
+
+        // Populate experience section
+        const experienceSection = document.getElementById('experience');
+        const experienceData = {
+            jobTitle: 'Job Title',
+            companyName: 'Company Name',
+            employmentPeriod: 'Employment Period',
+            responsibilities: ['Responsibility 1', 'Responsibility 2', 'Responsibility 3']
+        };
+        experienceSection.innerHTML = `
+            <div><strong>${experienceData.jobTitle}, ${experienceData.companyName}, ${experienceData.employmentPeriod}</strong></div>
+            <div>Responsibilities:</div>
+            <ul>
+                ${experienceData.responsibilities.map(responsibility => `<li>${responsibility}</li>`).join('')}
+            </ul>
+        `;
+
+        // Populate skills section
+        const skillsSection = document.getElementById('skills');
+        const skillsData = ['Skill 1', 'Skill 2', 'Skill 3'];
+        skillsSection.innerHTML = `
+            <ul>
+                ${skillsData.map(skill => `<li>${skill}</li>`).join('')}
+            </ul>
+        `;
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+h1{text-align: center;font-size: 60px;font-family:"times new roman";}
+table{font-style: italic;font-family: "Times New Roman" ;width:90%;height:400px; text-align:left ; margin-left:50px;font-size:30;}
+td{text-align: left;padding: 30px;}
+.background{background-image:url("file:///D:/Pictures/Animals/White%20Horse.jpg");
+    background-size:1500px 2000px;background-repeat:no-repeat;}
+pre{color: rgb(55, 25, 219);}
+
